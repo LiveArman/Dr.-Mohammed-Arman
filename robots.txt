@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dr.mohammed.arman.bd/sitemap.xml
+
+# Block access to any build/admin folders if added later
+Disallow: /admin/
+Disallow: /.git/
