@@ -154,64 +154,61 @@ $(document).ready(function () {
   });
 
   // ---- Appointment Form Submit ----
-  $('#appointment-form').on('submit', function (e) {
-    e.preventDefault();
+$('#appointment-form').on('submit', function (e) {
+  e.preventDefault();
 
-    // Gather values
-    const name     = $.trim($('#patient-name').val());
-    const mobile   = $.trim($('#patient-mobile').val());
-    const venue    = $('input[name="venue"]:checked').val() || '';
-    const date     = $.trim($('#appt-date').val());
-    const time     = $('input[name="time"]:checked').val() || '';
-    const reason   = $.trim($('#appt-reason').val());
-    const notes    = $.trim($('#appt-notes').val());
+  // Gather values
+  const name   = $.trim($('#patient-name').val());
+  const mobile = $.trim($('#patient-mobile').val());
+  const venue  = $('input[name="venue"]:checked').val() || '';
+  const date   = $.trim($('#appt-date').val());
+  const time   = $('input[name="time"]:checked').val() || '';
+  const reason = $.trim($('#appt-reason').val());
+  const notes  = $.trim($('#appt-notes').val());
 
-    // Validation
-    if (!name || !mobile || !date || !time || !reason) {
-      Swal.fire({
-        icon: 'warning',
-        title: 'Please fill all required fields',
-        html: 'Make sure to select a <b>Location</b>, <b>Date</b>, <b>Time slot</b>, and fill in all required patient information.',
-        confirmButtonColor: '#1565C0',
-        confirmButtonText: 'OK, Got it!'
-      });
-      return;
-    }
-
-    // Build WhatsApp message
-    const msg =
-      `*Appointment Booking — Dr. Mohammed Arman*\n\n` +
-      `*Patient Name:* ${name}\n` +
-      `*Date of Birth:* ${dob}\n` +
-      `*Mobile:* ${mobile}\n` +
-      (whatsapp ? `*WhatsApp:* ${whatsapp}\n` : '') +
-      `*Location:* ${location}\n` +
-      `*Consultation Venue:* ${venue}\n` +
-      `*Preferred Date:* ${date}\n` +
-      `*Preferred Time:* ${time}\n` +
-      `*Payment Method:* Offline\n` +
-      `*Reason for Visit:* ${reason}\n` +
-      (notes ? `*Notes:* ${notes}\n` : '') +
-      `\n---\n_Booked via dr.mohammed.arman.bd_`;
-
-    // SweetAlert2 success popup → WhatsApp redirect
+  // Validation
+  if (!name || !mobile || !venue || !date || !time || !reason) {
     Swal.fire({
-      title: 'Appointment Request Sent!',
-      html: `You are being redirected to WhatsApp to confirm your appointment with <b>Dr. Mohammed Arman</b>.`,
-      icon: 'success',
-      confirmButtonText: 'Open WhatsApp',
+      icon: 'warning',
+      title: 'Please fill all required fields',
+      html: 'Make sure to select a <b>Venue</b>, <b>Date</b>, <b>Time slot</b>, and complete all required information.',
       confirmButtonColor: '#1565C0',
-      timer: 4000,
-      timerProgressBar: true,
-      showClass: { popup: 'animate__animated animate__fadeInDown' },
-      customClass: { popup: 'swal2-popup' }
-    }).then(function (result) {
-      const waUrl = 'https://wa.me/8801841760769?text=' + encodeURIComponent(msg);
-      window.open(waUrl, '_blank');
-      // Reset form
-      $('#appointment-form')[0].reset();
+      confirmButtonText: 'OK, Got it!'
     });
+    return;
+  }
+
+  // Build WhatsApp message
+  const msg =
+    `*Appointment Booking — Dr. Mohammed Arman*\n\n` +
+    `*Patient Name:* ${name}\n` +
+    `*Mobile:* ${mobile}\n` +
+    `*Consultation Venue:* ${venue}\n` +
+    `*Preferred Date:* ${date}\n` +
+    `*Preferred Time:* ${time}\n` +
+    `*Payment Method:* Offline\n` +
+    `*Reason for Visit:* ${reason}\n` +
+    (notes ? `*Notes:* ${notes}\n` : '') +
+    `\n---\n_Booked via dr.mohammed.arman.bd_`;
+
+  const waUrl = 'https://wa.me/8801841760769?text=' + encodeURIComponent(msg);
+
+  // SweetAlert2 success popup → WhatsApp redirect
+  Swal.fire({
+    title: 'Appointment Request Sent!',
+    html: `Redirecting you to WhatsApp to confirm your appointment with <b>Dr. Mohammed Arman</b>.`,
+    icon: 'success',
+    confirmButtonText: 'Open WhatsApp',
+    confirmButtonColor: '#1565C0',
+    timer: 4000,
+    timerProgressBar: true,
+    showClass: { popup: 'animate__animated animate__fadeInDown' },
+    customClass: { popup: 'swal2-popup' }
+  }).then(() => {
+    window.open(waUrl, '_blank');
+    $('#appointment-form')[0].reset();
   });
+});
 
   // ---- Gallery Lightbox (simple modal) ----
   $('.gallery-item').on('click', function () {
