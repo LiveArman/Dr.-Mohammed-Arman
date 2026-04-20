@@ -1,175 +1,1396 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mohammed Arman | Physical Medicine & Rehabilitation Specialist | Chittagong</title>
-    <meta name="description" content="Dr. Mohammed Arman — Expert Physical Medicine, Pain Management & Rehabilitation Specialist in Chittagong. MBBS (CMC), FCPS (PM&R), EULAR Certified Rheumatologist.">
-    <meta name="keywords" content="Dr Mohammed Arman, Physical Medicine Specialist Chittagong, Physiatrist Bangladesh, Arthritis Doctor Chittagong, Pain Management Specialist">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Mohammed Arman | Physical Medicine & Rehabilitation Specialist | Chittagong</title>
+  <meta name="description" content="Dr. Mohammed Arman — Expert Physical Medicine, Pain Management & Rehabilitation Specialist in Chittagong. MBBS (CMC), FCPS (PM&R), EULAR Certified Rheumatologist. Book appointment at Parkview Hospital or Qrex Diagnostic Centre.">
+  <meta name="keywords" content="Dr Mohammed Arman, Physical Medicine Specialist Chittagong, Physiatrist Bangladesh, Arthritis Doctor Chittagong, Pain Management Specialist, Stroke Rehabilitation, Sports Injury Doctor, FCPS Physical Medicine">
+  <meta name="author" content="Dr. Mohammed Arman">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dr.mohammed.arman.bd/">
 
-    <style>
-        body { font-family: 'Nunito Sans', sans-serif; color: #212121; }
-        h1, h2, .font-serif { font-family: 'Playfair Display', serif; }
-        .font-poppins { font-family: 'Poppins', sans-serif; }
-        .bg-medical-primary { background-color: #1565C0; }
-        .text-medical-deep { color: #0D47A1; }
-    </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dr.mohammed.arman.bd/">
+  <meta property="og:title" content="Dr. Mohammed Arman | Physical Medicine Specialist | Chittagong">
+  <meta property="og:description" content="Expert Physiatrist — Arthritis, Chronic Pain, Stroke Rehabilitation, Sports Injuries. EULAR & ISPRM Certified. Book appointment in Chittagong.">
+  <meta property="og:image" content="https://dr.mohammed.arman.bd/cover.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Dr. Mohammed Arman">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      "name": "Dr. Mohammed Arman",
-      "jobTitle": "Physical Medicine & Rehabilitation Specialist",
-      "url": "https://dr.mohammed.arman.bd",
-      "telephone": "+8801841760769",
-      "medicalSpecialty": ["Physical Medicine and Rehabilitation", "Pain Management", "Rheumatology"]
-    }
-    </script>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Mohammed Arman | Physical Medicine Specialist">
+  <meta name="twitter:description" content="Expert Physiatrist in Chittagong. Book your appointment today.">
+  <meta name="twitter:image" content="https://dr.mohammed.arman.bd/cover.webp">
+
+  <!-- CDN Resources -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Mohammed Arman",
+    "alternateName": "Dr. Mohammad Arman",
+    "jobTitle": "Physical Medicine & Rehabilitation Specialist",
+    "description": "MBBS (CMC), FCPS (Physical Medicine & Rehabilitation). EULAR Certified Rheumatologist. Specialist in arthritis, pain management, neurorehabilitation, stroke recovery, and sports injuries.",
+    "url": "https://dr.mohammed.arman.bd",
+    "image": "https://dr.mohammed.arman.bd/logo.webp",
+    "telephone": "+8801841760769",
+    "email": "mohammed.arman.ar@gmail.com",
+    "sameAs": [
+      "https://facebook.com/physiatristarman",
+      "https://wa.me/8801841760769"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "94/103 Katalganj Road, Panchlaish",
+      "addressLocality": "Chattogram",
+      "addressRegion": "Chittagong Division",
+      "addressCountry": "BD"
+    },
+    "medicalSpecialty": ["Physical Medicine and Rehabilitation","Pain Management","Rheumatology","Neurorehabilitation","Sports Medicine"],
+    "availableService": [
+      {"@type": "MedicalTherapy","name": "Arthritis Treatment"},
+      {"@type": "MedicalTherapy","name": "Pain Management"},
+      {"@type": "MedicalTherapy","name": "Stroke Rehabilitation"},
+      {"@type": "MedicalTherapy","name": "Sports Injury Treatment"},
+      {"@type": "MedicalTherapy","name": "Neurorehabilitation"}
+    ],
+    "worksFor": [
+      {"@type": "Hospital","name": "Parkview Hospital","address": "94/103 Katalganj Road, Panchlaish, Chattogram"},
+      {"@type": "MedicalClinic","name": "Qrex Diagnostic & Consultation Centre","address": "Plot #9/A, Road #1, Block G, Halishahar, Chattogram"},
+      {"@type": "Hospital","name": "Chittagong International Medical College & Hospital (CIMCH)"}
+    ]
+  }
+  </script>
 </head>
-<body class="bg-white">
+<body class="bg-white text-gray-900 font-nunito">
 
-    <header class="fixed top-0 w-full bg-white shadow-sm z-50 h-[70px] flex items-center">
-        <nav class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="logo.webp" alt="Logo" class="h-12 w-auto">
-                <div>
-                    <h1 class="text-medical-deep text-xl font-bold leading-tight">Dr. Mohammed Arman</h1>
-                    <p class="text-xs text-gray-500 font-poppins">Physical Medicine Specialist</p>
-                </div>
-            </div>
-            
-            <ul class="hidden lg:flex space-x-6 font-poppins text-sm font-semibold">
-                <li><a href="#hero" class="hover:text-blue-700">Home</a></li>
-                <li><a href="#about" class="hover:text-blue-700">About</a></li>
-                <li><a href="#specialties" class="hover:text-blue-700">Specialties</a></li>
-                <li><a href="#chambers" class="hover:text-blue-700">Chambers</a></li>
-                <li><a href="#contact" class="hover:text-blue-700">Contact</a></li>
-            </ul>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-[70px]">
 
-            <a href="https://wa.me/8801841760769" class="bg-green-500 text-white px-4 py-2 rounded-full flex items-center text-sm font-bold">
-                <i class="fab fa-whatsapp mr-2 text-lg"></i> WhatsApp
-            </a>
+        <!-- Logo + Doctor Info -->
+        <a href="#hero" class="flex items-center gap-3 flex-shrink-0">
+          <div class="w-11 h-11 rounded-full bg-blue-700 flex items-center justify-center text-white font-bold text-lg shadow">
+            <i class="fas fa-user-md text-lg"></i>
+          </div>
+          <div>
+            <div class="font-playfair text-[17px] font-bold text-blue-900 leading-tight">Dr. Mohammed Arman</div>
+            <div class="font-nunito text-[11px] text-gray-500 leading-tight">MBBS (CMC), FCPS (PM&R) | Physical Medicine</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-6 font-poppins text-sm font-medium">
+          <a href="#hero" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">Home</a>
+          <a href="#about" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">About</a>
+          <a href="#specialties" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">Specialties</a>
+          <a href="#services" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">Services</a>
+          <a href="#chambers" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">Chambers</a>
+          <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">Reviews</a>
+          <a href="#contact" class="nav-link text-gray-700 hover:text-blue-700 transition-colors duration-200">Contact</a>
         </nav>
-    </header>
 
-    <section id="hero" class="min-height-[100vh] pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white overflow-hidden">
-        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-            <div data-aos="fade-right">
-                <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold inline-block mb-4">Welcome to My Practice</span>
-                <h1 class="text-medical-deep text-5xl lg:text-6xl font-bold mb-4">Dr. Mohammed Arman</h1>
-                <p class="text-blue-700 font-poppins text-lg mb-4">MBBS (CMC) | FCPS (Physical Medicine & Rehabilitation)</p>
-                <p class="text-gray-600 mb-8 max-w-lg">Providing compassionate, evidence-based care for arthritis, chronic pain, and stroke rehabilitation in Chittagong[cite: 409, 410].</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#appointment" class="bg-medical-primary text-white px-8 py-4 rounded-xl font-bold shadow-lg">Book Appointment</a>
-                    <a href="tel:+8801841760769" class="border-2 border-green-500 text-green-600 px-8 py-4 rounded-xl font-bold">Call Now</a>
-                </div>
-            </div>
-            <div class="relative" data-aos="fade-left">
-                <img src="assets/images/doctor-hero.webp" alt="Dr. Mohammed Arman" class="rounded-2xl border-4 border-white shadow-2xl z-10 relative">
-                <div class="absolute -bottom-6 -left-6 bg-white p-4 shadow-xl rounded-xl z-20">
-                    <p class="text-medical-deep font-bold">Physical Medicine Specialist</p>
-                </div>
-            </div>
+        <!-- Right CTAs -->
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+             class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition-all duration-200 shadow-sm">
+            <i class="fab fa-whatsapp text-base"></i>
+            <span class="hidden sm:inline">WhatsApp</span>
+          </a>
+          <a href="#appointment"
+             class="hidden lg:flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded-full transition-all duration-200 shadow-sm">
+            <i class="fas fa-calendar-check text-sm"></i>
+            Book Appointment
+          </a>
+          <!-- Hamburger -->
+          <button id="menu-toggle" class="lg:hidden p-2 rounded-lg text-gray-600 hover:text-blue-700 hover:bg-blue-50 transition-colors" aria-label="Toggle menu">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="specialties" class="py-20 bg-blue-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-medical-deep text-4xl font-bold mb-4">Areas of Expertise</h2>
-                <p class="text-gray-600">Comprehensive care for physical medicine conditions[cite: 442].</p>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg">
+      <div class="px-4 py-4 space-y-1 font-poppins">
+        <a href="#hero" class="mobile-link block py-3 px-4 text-gray-700 font-semibold border-b border-gray-50 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">Home</a>
+        <a href="#about" class="mobile-link block py-3 px-4 text-gray-700 font-semibold border-b border-gray-50 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">About</a>
+        <a href="#specialties" class="mobile-link block py-3 px-4 text-gray-700 font-semibold border-b border-gray-50 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">Specialties</a>
+        <a href="#services" class="mobile-link block py-3 px-4 text-gray-700 font-semibold border-b border-gray-50 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">Services</a>
+        <a href="#chambers" class="mobile-link block py-3 px-4 text-gray-700 font-semibold border-b border-gray-50 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">Chambers</a>
+        <a href="#contact" class="mobile-link block py-3 px-4 text-gray-700 font-semibold border-b border-gray-50 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors">Contact</a>
+        <a href="#appointment" class="mobile-link block mt-2 py-3 px-4 bg-blue-700 text-white font-bold text-center rounded-xl hover:bg-blue-800 transition-colors">
+          <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section id="hero" class="min-h-screen pt-16 lg:pt-[70px] bg-gradient-to-br from-blue-50 via-white to-blue-50 relative overflow-hidden flex items-center">
+    <!-- Background decorative elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="hero-blob-1"></div>
+      <div class="hero-blob-2"></div>
+      <svg class="absolute top-20 right-10 opacity-5 w-64 h-64" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="80" stroke="#1565C0" stroke-width="2"/><circle cx="100" cy="100" r="60" stroke="#1565C0" stroke-width="2"/><line x1="100" y1="20" x2="100" y2="180" stroke="#1565C0" stroke-width="1"/><line x1="20" y1="100" x2="180" y2="100" stroke="#1565C0" stroke-width="1"/></svg>
+      <svg class="absolute bottom-10 left-10 opacity-5 w-48 h-48" viewBox="0 0 100 100"><path d="M50 10 L60 40 L90 40 L67 58 L77 88 L50 70 L23 88 L33 58 L10 40 L40 40 Z" fill="#1565C0"/></svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-8 items-center">
+
+        <!-- Left Column -->
+        <div class="lg:col-span-3" data-aos="fade-right" data-aos-duration="900">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full mb-6">
+            <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+            Welcome to My Practice
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight mb-3">
+            Dr. Mohammed<br>Arman
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="font-poppins text-blue-700 font-semibold text-lg mb-2">
+            MBBS (CMC) &nbsp;|&nbsp; FCPS (Physical Medicine & Rehabilitation)
+          </p>
+
+          <!-- Tagline -->
+          <p class="font-nunito text-gray-500 text-base mb-6">
+            EULAR Certified Rheumatologist &nbsp;·&nbsp; Neurorehabilitation Specialist &nbsp;·&nbsp; Pain Management Expert
+          </p>
+
+          <!-- Description -->
+          <p class="font-nunito text-gray-600 text-base leading-relaxed mb-8 max-w-xl">
+            Providing compassionate, evidence-based care in Physical Medicine & Rehabilitation. Specializing in arthritis, chronic pain, paralysis recovery, stroke rehabilitation, and sports injuries — serving Chittagong and beyond.
+          </p>
+
+          <!-- Stats Row -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            <div class="bg-white shadow-sm rounded-xl p-4 text-center border border-blue-50">
+              <div class="font-playfair text-3xl font-bold text-blue-700"><span class="counter" data-target="10">0</span>+</div>
+              <div class="font-nunito text-xs text-gray-500 mt-1">Years Experience</div>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all" data-aos="zoom-in">
-                    <i class="fas fa-joint text-4xl text-blue-600 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-3">Arthritis Treatment</h3>
-                    <p class="text-sm text-gray-600">Expert management of Rheumatoid and Osteoarthritis using EULAR certified approaches[cite: 445].</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fas fa-brain text-4xl text-blue-600 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-3">Neurorehabilitation</h3>
-                    <p class="text-sm text-gray-600">Stroke, spinal cord injury, and Parkinson's recovery programs[cite: 445].</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-running text-4xl text-blue-600 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-3">Sports Injuries</h3>
-                    <p class="text-sm text-gray-600">FIFA certified sports medicine for muscle tears and sprains[cite: 445].</p>
-                </div>
+            <div class="bg-white shadow-sm rounded-xl p-4 text-center border border-blue-50">
+              <div class="font-playfair text-3xl font-bold text-blue-700"><span class="counter" data-target="5000">0</span>+</div>
+              <div class="font-nunito text-xs text-gray-500 mt-1">Patients Treated</div>
             </div>
+            <div class="bg-white shadow-sm rounded-xl p-4 text-center border border-blue-50">
+              <div class="font-playfair text-3xl font-bold text-blue-700"><span class="counter" data-target="3">0</span></div>
+              <div class="font-nunito text-xs text-gray-500 mt-1">Clinics</div>
+            </div>
+            <div class="bg-white shadow-sm rounded-xl p-4 text-center border border-blue-50">
+              <div class="font-playfair text-3xl font-bold text-blue-700"><span class="counter" data-target="6">0</span>+</div>
+              <div class="font-nunito text-xs text-gray-500 mt-1">Certifications</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-4">
+            <a href="#appointment" class="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-blue-200 transition-all duration-300 font-poppins">
+              <i class="fas fa-calendar-check"></i> Book Appointment
+            </a>
+            <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-green-200 transition-all duration-300 font-poppins">
+              <i class="fab fa-whatsapp text-xl"></i> Call / WhatsApp
+            </a>
+          </div>
         </div>
-    </section>
 
-    <section id="appointment" class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-blue-50 rounded-3xl p-8 md:p-12 shadow-inner">
-                <h2 class="text-center text-3xl font-bold mb-10 text-medical-deep">Book an Appointment</h2>
-                <form id="appointment-form" class="space-y-6">
-                    <div>
-                        <label class="block font-bold mb-4">Select Consultation Location</label>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <label class="cursor-pointer">
-                                <input type="radio" name="venue" value="Parkview Hospital" class="hidden peer" checked>
-                                <div class="p-4 border-2 border-gray-200 rounded-xl bg-white peer-checked:border-blue-600 peer-checked:bg-blue-50">
-                                    <p class="font-bold">Parkview Hospital</p>
-                                    <p class="text-xs text-gray-500">Sat, Mon, Wed | 3–6 PM</p>
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="venue" value="Qrex Diagnostic" class="hidden peer">
-                                <div class="p-4 border-2 border-gray-200 rounded-xl bg-white peer-checked:border-blue-600 peer-checked:bg-blue-50">
-                                    <p class="font-bold">Qrex Diagnostic</p>
-                                    <p class="text-xs text-gray-500">Sun, Tue, Thu | 3–6 PM</p>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" id="patient-name" placeholder="Patient Full Name*" class="w-full p-4 rounded-xl border border-gray-300" required>
-                        <input type="tel" id="patient-mobile" placeholder="Mobile Number*" class="w-full p-4 rounded-xl border border-gray-300" required>
-                        <input type="date" id="appt-date" class="w-full p-4 rounded-xl border border-gray-300" required>
-                        <select id="appt-time" class="w-full p-4 rounded-xl border border-gray-300" required>
-                            <option value="">Select Time Slot</option>
-                            <option value="3:00 PM">3:00 PM</option>
-                            <option value="4:00 PM">4:00 PM</option>
-                            <option value="5:00 PM">5:00 PM</option>
-                        </select>
-                    </div>
-                    
-                    <textarea id="appt-reason" placeholder="Reason for Visit (Chief Complaint)*" class="w-full p-4 rounded-xl border border-gray-300 h-32" required></textarea>
-
-                    <button type="submit" class="w-full bg-medical-primary text-white py-4 rounded-xl text-lg font-bold hover:bg-blue-800 transition">
-                        Confirm Appointment & Contact Doctor
-                    </button>
-                </form>
+        <!-- Right Column -->
+        <div class="lg:col-span-2 flex justify-center" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+          <div class="relative">
+            <!-- Main photo placeholder with styled frame -->
+            <div class="relative w-72 h-80 lg:w-80 lg:h-96">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-400 rounded-3xl rotate-3 shadow-2xl"></div>
+              <div class="relative w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl border-4 border-blue-500 shadow-2xl overflow-hidden flex items-center justify-center">
+                <!-- Doctor SVG illustration -->
+                <svg viewBox="0 0 200 260" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="260" fill="#EFF6FF"/>
+                  <!-- Body/coat -->
+                  <rect x="55" y="130" width="90" height="130" rx="10" fill="#1565C0"/>
+                  <!-- White coat lapels -->
+                  <path d="M100 130 L70 155 L70 260 L100 260 Z" fill="white" opacity="0.9"/>
+                  <path d="M100 130 L130 155 L130 260 L100 260 Z" fill="white" opacity="0.9"/>
+                  <!-- Stethoscope -->
+                  <path d="M85 160 Q80 185 90 195 Q100 205 110 195 Q120 185 115 160" stroke="#0D47A1" stroke-width="3" fill="none"/>
+                  <circle cx="100" cy="200" r="8" fill="#0D47A1"/>
+                  <!-- Neck -->
+                  <rect x="88" y="110" width="24" height="25" rx="5" fill="#FDBCB4"/>
+                  <!-- Head -->
+                  <ellipse cx="100" cy="95" rx="32" ry="35" fill="#FDBCB4"/>
+                  <!-- Hair -->
+                  <ellipse cx="100" cy="68" rx="32" ry="15" fill="#2C1810"/>
+                  <rect x="68" y="68" width="8" height="25" rx="4" fill="#2C1810"/>
+                  <rect x="124" y="68" width="8" height="25" rx="4" fill="#2C1810"/>
+                  <!-- Eyes -->
+                  <ellipse cx="88" cy="93" rx="5" ry="6" fill="white"/>
+                  <ellipse cx="112" cy="93" rx="5" ry="6" fill="white"/>
+                  <circle cx="89" cy="94" r="3" fill="#2C1810"/>
+                  <circle cx="113" cy="94" r="3" fill="#2C1810"/>
+                  <!-- Smile -->
+                  <path d="M90 108 Q100 116 110 108" stroke="#C47A6D" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <!-- ID Badge -->
+                  <rect x="83" y="155" width="34" height="22" rx="3" fill="white"/>
+                  <rect x="86" y="158" width="28" height="3" rx="1" fill="#1565C0"/>
+                  <rect x="86" y="163" width="20" height="2" rx="1" fill="#90CAF9"/>
+                  <rect x="86" y="167" width="24" height="2" rx="1" fill="#90CAF9"/>
+                </svg>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <footer class="bg-blue-900 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-2">Dr. Mohammed Arman</h2>
-            <p class="text-blue-200 text-sm mb-6">MBBS (CMC) | FCPS (PM&R) | EULAR Certified</p>
-            <div class="flex justify-center space-x-6 text-xl mb-8">
-                <a href="https://facebook.com/physiatristarman"><i class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/8801841760769"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:mohammed.arman.ar@gmail.com"><i class="far fa-envelope"></i></a>
+            <!-- Floating Specialty Badge -->
+            <div class="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-3 border border-blue-50 flex items-center gap-2">
+              <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-award text-blue-600 text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins text-xs font-bold text-blue-900">FCPS (PM&R)</div>
+                <div class="font-nunito text-[10px] text-gray-500">EULAR Certified</div>
+              </div>
             </div>
-            <p class="text-xs text-gray-400">© 2026 Dr. Mohammed Arman. All Rights Reserved. [cite: 594]</p>
-        </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/main.js"></script>
+            <!-- Floating Location Badge -->
+            <div class="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-3 border border-blue-50 flex items-center gap-2">
+              <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-map-marker-alt text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins text-xs font-bold text-gray-800">Chittagong</div>
+                <div class="font-nunito text-[10px] text-gray-500">Bangladesh</div>
+              </div>
+            </div>
+
+            <!-- Decorative SVG elements -->
+            <svg class="absolute -top-8 left-4 w-12 h-12 text-blue-300 opacity-60" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <a href="#about" class="w-10 h-10 rounded-full border-2 border-blue-300 flex items-center justify-center text-blue-400 hover:border-blue-600 hover:text-blue-600 transition-colors">
+        <i class="fas fa-chevron-down text-sm"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: ABOUT ===== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Left: Bio -->
+        <div data-aos="fade-right">
+          <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">About The Doctor</span>
+          <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-6 leading-tight">Meet Dr. Mohammed Arman</h2>
+
+          <p class="font-nunito text-gray-600 text-base leading-relaxed mb-4">
+            Dr. Mohammed Arman is a highly qualified Physical Medicine, Pain Management & Rehabilitation Specialist (Physiatrist) based in Chittagong, Bangladesh. He completed his MBBS from Chittagong Medical College (CMC) and earned his FCPS in Physical Medicine & Rehabilitation in 2024.
+          </p>
+          <p class="font-nunito text-gray-600 text-base leading-relaxed mb-4">
+            He is an EULAR Certified Rheumatologist from Switzerland, trained in Neurorehabilitation under ISPRM (International Society of Physical & Rehabilitation Medicine), holds a Fellowship in Pain Management from India, and is certified in MSK Ultrasound (EULAR) — making him one of the most internationally credentialed physiatrists in the region.
+          </p>
+          <p class="font-nunito text-gray-600 text-base leading-relaxed mb-8">
+            Currently serving as a Consultant at Chittagong International Medical College & Hospital (CIMCH), Dr. Arman brings world-class expertise to his patients at Parkview Hospital and Qrex Diagnostic & Consultation Centre.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-3">
+            <span class="font-nunito text-sm text-gray-500 mr-1">Follow:</span>
+            <a href="https://web.facebook.com/physiatristarman" target="_blank" rel="noopener"
+               class="w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://m.me/physiatristarman" target="_blank" rel="noopener"
+               class="w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+              <i class="fab fa-facebook-messenger"></i>
+            </a>
+            <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+               class="w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:mohammed.arman.ar@gmail.com"
+               class="w-10 h-10 bg-red-500 hover:bg-red-600 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Qualifications Timeline -->
+        <div data-aos="fade-left" data-aos-delay="200">
+          <h3 class="font-poppins font-bold text-lg text-gray-800 mb-6 flex items-center gap-2">
+            <i class="fas fa-graduation-cap text-blue-600"></i> Qualifications & Certifications
+          </h3>
+          <div class="space-y-4">
+            <!-- Qualification Items -->
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-graduation-cap text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">MBBS</div>
+                <div class="font-nunito text-gray-600 text-sm">Chittagong Medical College (CMC)</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-award text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">FCPS — Physical Medicine & Rehabilitation</div>
+                <div class="font-nunito text-gray-600 text-sm">Fellowship of College of Physicians & Surgeons, 2024</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-certificate text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">EULAR Certified Rheumatologist</div>
+                <div class="font-nunito text-gray-600 text-sm">European Alliance of Associations for Rheumatology — Switzerland</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-brain text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Neurorehabilitation Training — ISPRM</div>
+                <div class="font-nunito text-gray-600 text-sm">International Society of Physical & Rehabilitation Medicine</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-syringe text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Fellowship in Pain Management</div>
+                <div class="font-nunito text-gray-600 text-sm">India</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-microscope text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">MSK Ultrasound Certification — EULAR</div>
+                <div class="font-nunito text-gray-600 text-sm">Musculoskeletal Ultrasound, European Alliance</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-running text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Sports Medicine Training — FIFA</div>
+                <div class="font-nunito text-gray-600 text-sm">Fédération Internationale de Football Association</div>
+              </div>
+            </div>
+            <div class="qual-item flex items-start gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow">
+                <i class="fas fa-heartbeat text-white text-sm"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">CCD — BIRDEM</div>
+                <div class="font-nunito text-gray-600 text-sm">Certificate in Clinical Diabetology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: SPECIALTIES ===== -->
+  <section id="specialties" class="py-20 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Expertise</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-4">Areas of Expertise</h2>
+        <p class="font-nunito text-gray-500 text-base max-w-xl mx-auto">Comprehensive care for a wide range of physical medicine conditions</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="specialty-card bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-blue-50 group" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-700 transition-colors duration-300">
+            <i class="fas fa-bone text-blue-600 text-2xl group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Arthritis Treatment</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">Expert management of Rheumatoid Arthritis, Osteoarthritis, Psoriatic Arthritis — EULAR certified approach.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-teal-50 text-teal-700 border border-teal-100 rounded-full px-3 py-1">Rheumatoid</span>
+            <span class="text-xs bg-teal-50 text-teal-700 border border-teal-100 rounded-full px-3 py-1">Osteoarthritis</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="specialty-card bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-blue-50 group" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors duration-300">
+            <i class="fas fa-heartbeat text-red-600 text-2xl group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Pain Management</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">Chronic pain, fibromyalgia, nerve pain — Fellowship certified pain specialist from India.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-red-50 text-red-700 border border-red-100 rounded-full px-3 py-1">Chronic Pain</span>
+            <span class="text-xs bg-red-50 text-red-700 border border-red-100 rounded-full px-3 py-1">Fibromyalgia</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="specialty-card bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-blue-50 group" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-purple-700 transition-colors duration-300">
+            <i class="fas fa-brain text-purple-600 text-2xl group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Neurorehabilitation</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">Stroke, spinal cord injury, Parkinson's, CP recovery — ISPRM certified neurorehabilitation.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-purple-50 text-purple-700 border border-purple-100 rounded-full px-3 py-1">Stroke Recovery</span>
+            <span class="text-xs bg-purple-50 text-purple-700 border border-purple-100 rounded-full px-3 py-1">ISPRM</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="specialty-card bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-blue-50 group" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-green-700 transition-colors duration-300">
+            <i class="fas fa-running text-green-600 text-2xl group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Sports Injuries</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">FIFA certified sports medicine — muscle tears, sprains, fractures, return-to-sport programs.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-green-50 text-green-700 border border-green-100 rounded-full px-3 py-1">FIFA Certified</span>
+            <span class="text-xs bg-green-50 text-green-700 border border-green-100 rounded-full px-3 py-1">Rehabilitation</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="specialty-card bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-blue-50 group" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-orange-600 transition-colors duration-300">
+            <i class="fas fa-child text-orange-600 text-2xl group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Back & Neck Pain</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">Low back pain, neck pain, disc herniation, sciatica — non-surgical rehabilitation approach.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-orange-50 text-orange-700 border border-orange-100 rounded-full px-3 py-1">Non-Surgical</span>
+            <span class="text-xs bg-orange-50 text-orange-700 border border-orange-100 rounded-full px-3 py-1">Sciatica</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="specialty-card bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-blue-50 group" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-700 transition-colors duration-300">
+            <i class="fas fa-wheelchair text-blue-600 text-2xl group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Paralysis Recovery</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">Post-stroke paralysis, spinal cord injury rehab — personalized recovery plans.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="text-xs bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-3 py-1">Post-Stroke</span>
+            <span class="text-xs bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-3 py-1">Recovery Plans</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: SERVICES ===== -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Services List -->
+        <div data-aos="fade-right">
+          <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Our Services</span>
+          <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-8 leading-tight">Comprehensive Physical Medicine Services</h2>
+
+          <div class="space-y-3">
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="50">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Consultation & Clinical Assessment</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="100">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Musculoskeletal Ultrasound (MSK USG)</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="150">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Electromyography (EMG) & Nerve Conduction Study</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="200">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Injection Therapies (PRP, Corticosteroid, Hyaluronic Acid)</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="250">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Physiotherapy Prescription & Supervision</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="300">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Post-Surgical Rehabilitation</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="350">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Sports Injury Management & Return-to-Sport</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="400">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Stroke Rehabilitation & Neurological Recovery</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="450">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Rheumatology Consultation</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="500">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Pain Management Programs</span>
+            </div>
+            <div class="service-item flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 transition-colors" data-aos="fade-right" data-aos-delay="550">
+              <i class="fas fa-check-circle text-green-600 text-xl flex-shrink-0"></i>
+              <span class="font-nunito text-gray-700 font-medium">Disability Assessment & Certification</span>
+            </div>
+          </div>
+
+          <!-- CTA Block -->
+          <div class="mt-8 bg-blue-50 rounded-2xl p-6 border border-blue-100">
+            <p class="font-poppins font-semibold text-blue-900 text-base mb-3">Need a Consultation?</p>
+            <p class="font-nunito text-gray-600 text-sm mb-4">Book your appointment today and take the first step towards recovery.</p>
+            <a href="#appointment" class="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 font-poppins text-sm">
+              <i class="fas fa-calendar-check"></i> Book Appointment
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Medical Illustration SVG -->
+        <div class="flex justify-center" data-aos="fade-left" data-aos-delay="200">
+          <div class="relative w-full max-w-md">
+            <svg viewBox="0 0 400 450" class="w-full drop-shadow-xl" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background circle -->
+              <circle cx="200" cy="225" r="180" fill="#EFF6FF"/>
+              <!-- Medical cross -->
+              <rect x="170" y="60" width="60" height="180" rx="10" fill="#1565C0" opacity="0.15"/>
+              <rect x="110" y="120" width="180" height="60" rx="10" fill="#1565C0" opacity="0.15"/>
+              <!-- Doctor Figure -->
+              <ellipse cx="200" cy="145" rx="35" ry="38" fill="#FDBCB4"/>
+              <rect x="165" y="175" width="70" height="100" rx="12" fill="#1565C0"/>
+              <rect x="165" y="175" width="35" height="100" rx="0" fill="white" opacity="0.8"/>
+              <rect x="200" y="175" width="35" height="100" rx="0" fill="white" opacity="0.8"/>
+              <rect x="165" y="175" width="70" height="15" rx="0" fill="#1565C0" opacity="0.3"/>
+              <!-- Stethoscope around neck -->
+              <path d="M185 185 Q175 210 180 225 Q190 240 200 240 Q210 240 220 225 Q225 210 215 185" stroke="#0D47A1" stroke-width="4" fill="none"/>
+              <circle cx="200" cy="242" r="10" fill="#0D47A1"/>
+              <!-- Clipboard -->
+              <rect x="220" y="210" width="50" height="65" rx="6" fill="white" stroke="#90CAF9" stroke-width="2"/>
+              <rect x="230" y="205" width="30" height="10" rx="5" fill="#1565C0"/>
+              <line x1="228" y1="225" x2="262" y2="225" stroke="#90CAF9" stroke-width="2"/>
+              <line x1="228" y1="233" x2="262" y2="233" stroke="#90CAF9" stroke-width="2"/>
+              <line x1="228" y1="241" x2="250" y2="241" stroke="#90CAF9" stroke-width="2"/>
+              <!-- Patient in wheelchair -->
+              <circle cx="200" cy="370" r="22" fill="#FDBCB4"/>
+              <rect x="178" y="390" width="44" height="50" rx="8" fill="#64B5F6"/>
+              <!-- Wheelchair -->
+              <circle cx="170" cy="430" r="18" fill="none" stroke="#546E7A" stroke-width="4"/>
+              <circle cx="230" cy="430" r="18" fill="none" stroke="#546E7A" stroke-width="4"/>
+              <line x1="170" y1="412" x2="230" y2="412" stroke="#546E7A" stroke-width="4"/>
+              <line x1="200" y1="390" x2="200" y2="412" stroke="#546E7A" stroke-width="3"/>
+              <!-- Medical Cross top right -->
+              <rect x="310" y="80" width="16" height="48" rx="4" fill="#1565C0" opacity="0.6"/>
+              <rect x="294" y="96" width="48" height="16" rx="4" fill="#1565C0" opacity="0.6"/>
+              <!-- Heartbeat line bottom -->
+              <path d="M40 400 L80 400 L100 360 L120 440 L140 400 L360 400" stroke="#C62828" stroke-width="3" fill="none" opacity="0.4"/>
+              <!-- Stars / sparkles -->
+              <circle cx="60" cy="100" r="5" fill="#FDD835" opacity="0.8"/>
+              <circle cx="340" cy="310" r="5" fill="#FDD835" opacity="0.8"/>
+              <circle cx="350" cy="130" r="3" fill="#81D4FA" opacity="0.9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: CHAMBERS ===== -->
+  <section id="chambers" class="py-20 bg-blue-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-300 uppercase mb-3">Visit Us</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-white mb-4">Chamber Locations</h2>
+        <p class="font-nunito text-blue-200 text-base max-w-xl mx-auto">Visit Dr. Mohammed Arman at any of his consultation locations across Chittagong</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: Parkview -->
+        <div class="chamber-card bg-blue-800/50 backdrop-blur border border-blue-700 rounded-2xl p-6 hover:border-blue-400 transition-all duration-300" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 bg-blue-700 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+            <i class="fas fa-hospital text-blue-200 text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-white text-xl mb-2">Parkview Hospital</h3>
+          <p class="font-nunito text-blue-200 text-sm mb-4">94/103, Katalganj Road, Panchlaish, Chattogram</p>
+
+          <div class="bg-blue-700/50 rounded-xl p-3 mb-4">
+            <div class="flex items-center gap-2 text-blue-100 text-sm font-poppins font-semibold">
+              <i class="fas fa-calendar-alt text-blue-300 text-sm"></i>
+              Sat, Mon & Wed
+            </div>
+            <div class="flex items-center gap-2 text-blue-200 text-sm mt-1">
+              <i class="fas fa-clock text-blue-300 text-sm"></i>
+              3:00 PM – 6:00 PM
+            </div>
+          </div>
+
+          <a href="tel:+8801841760769" class="flex items-center gap-2 text-blue-200 hover:text-white text-sm mb-4 transition-colors">
+            <i class="fas fa-phone text-blue-300"></i>
+            +880 1841-760769
+          </a>
+
+          <a href="#appointment" class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 rounded-xl transition-colors font-poppins text-sm">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </a>
+        </div>
+
+        <!-- Card 2: Qrex -->
+        <div class="chamber-card bg-blue-800/50 backdrop-blur border border-blue-700 rounded-2xl p-6 hover:border-blue-400 transition-all duration-300" data-aos="fade-up" data-aos-delay="150">
+          <div class="w-14 h-14 bg-teal-700 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+            <i class="fas fa-clinic-medical text-teal-200 text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-white text-xl mb-2">Qrex Diagnostic Centre</h3>
+          <p class="font-nunito text-blue-200 text-sm mb-4">Plot #9/A, Road #1, Lane #2, Block G, Halishahar, Chattogram</p>
+
+          <div class="bg-blue-700/50 rounded-xl p-3 mb-4">
+            <div class="flex items-center gap-2 text-blue-100 text-sm font-poppins font-semibold">
+              <i class="fas fa-calendar-alt text-blue-300 text-sm"></i>
+              Sun, Tue & Thu
+            </div>
+            <div class="flex items-center gap-2 text-blue-200 text-sm mt-1">
+              <i class="fas fa-clock text-blue-300 text-sm"></i>
+              3:00 PM – 6:00 PM
+            </div>
+          </div>
+
+          <a href="tel:+8801828880299" class="flex items-center gap-2 text-blue-200 hover:text-white text-sm mb-4 transition-colors">
+            <i class="fas fa-phone text-blue-300"></i>
+            +880 1828-880299
+          </a>
+
+          <a href="#appointment" class="w-full flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-semibold py-2.5 rounded-xl transition-colors font-poppins text-sm">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </a>
+        </div>
+
+        <!-- Card 3: CIMCH -->
+        <div class="chamber-card bg-blue-800/50 backdrop-blur border border-blue-700 rounded-2xl p-6 hover:border-blue-400 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-14 h-14 bg-indigo-700 rounded-2xl flex items-center justify-center mb-5 shadow-lg">
+            <i class="fas fa-university text-indigo-200 text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-white text-xl mb-2">CIMCH</h3>
+          <p class="font-nunito text-blue-200 text-sm mb-4">Chittagong International Medical College & Hospital, Chittagong, Bangladesh</p>
+
+          <div class="bg-blue-700/50 rounded-xl p-3 mb-4">
+            <div class="flex items-center gap-2 text-blue-100 text-sm font-poppins font-semibold">
+              <i class="fas fa-calendar-alt text-blue-300 text-sm"></i>
+              By Appointment Only
+            </div>
+            <div class="flex items-center gap-2 text-blue-200 text-sm mt-1">
+              <i class="fas fa-user-md text-blue-300 text-sm"></i>
+              Consultant Physician
+            </div>
+          </div>
+
+          <a href="https://wa.me/8801841760769" target="_blank" rel="noopener" class="flex items-center gap-2 text-blue-200 hover:text-white text-sm mb-4 transition-colors">
+            <i class="fab fa-whatsapp text-green-400"></i>
+            +880 1841-760769
+          </a>
+
+          <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+             class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold py-2.5 rounded-xl transition-colors font-poppins text-sm">
+            <i class="fab fa-whatsapp"></i> WhatsApp to Book
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: WHY CHOOSE / STATS ===== -->
+  <section id="why-choose" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Why Us</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-4">Why Choose Dr. Mohammed Arman?</h2>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+        <div class="bg-white shadow-sm rounded-2xl p-6 text-center border border-gray-100" data-aos="flip-up" data-aos-delay="0">
+          <div class="font-playfair text-5xl font-bold text-blue-700 mb-2"><span class="counter2" data-target="10">0</span>+</div>
+          <div class="font-nunito text-gray-500 text-sm">Years of Experience</div>
+        </div>
+        <div class="bg-white shadow-sm rounded-2xl p-6 text-center border border-gray-100" data-aos="flip-up" data-aos-delay="100">
+          <div class="font-playfair text-5xl font-bold text-blue-700 mb-2"><span class="counter2" data-target="5000">0</span>+</div>
+          <div class="font-nunito text-gray-500 text-sm">Patients Treated</div>
+        </div>
+        <div class="bg-white shadow-sm rounded-2xl p-6 text-center border border-gray-100" data-aos="flip-up" data-aos-delay="200">
+          <div class="font-playfair text-5xl font-bold text-blue-700 mb-2"><span class="counter2" data-target="6">0</span>+</div>
+          <div class="font-nunito text-gray-500 text-sm">International Certifications</div>
+        </div>
+        <div class="bg-white shadow-sm rounded-2xl p-6 text-center border border-gray-100" data-aos="flip-up" data-aos-delay="300">
+          <div class="font-playfair text-5xl font-bold text-blue-700 mb-2"><span class="counter2" data-target="3">0</span></div>
+          <div class="font-nunito text-gray-500 text-sm">Consultation Locations</div>
+        </div>
+      </div>
+
+      <!-- USP Cards -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center mb-4">
+            <i class="fas fa-award text-yellow-600 text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">International Certifications</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">EULAR certified from Switzerland, ISPRM trained, FIFA sports medicine certified — truly world-class credentials.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="150">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
+            <i class="fas fa-user-md text-blue-600 text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Patient-Centered Care</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">Personalized treatment plans tailored to each patient's needs with compassionate, evidence-based approach.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mb-4">
+            <i class="fas fa-stethoscope text-teal-600 text-2xl"></i>
+          </div>
+          <h3 class="font-poppins font-bold text-blue-900 text-lg mb-2">Modern Diagnostic Tools</h3>
+          <p class="font-nunito text-gray-500 text-sm leading-relaxed">MSK Ultrasound, EMG, nerve conduction studies — equipped with the latest diagnostic equipment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: TESTIMONIALS ===== -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Patient Reviews</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-4">What Our Patients Say</h2>
+        <div class="flex justify-center gap-1 mt-2">
+          <i class="fas fa-star text-yellow-400 text-xl"></i>
+          <i class="fas fa-star text-yellow-400 text-xl"></i>
+          <i class="fas fa-star text-yellow-400 text-xl"></i>
+          <i class="fas fa-star text-yellow-400 text-xl"></i>
+          <i class="fas fa-star text-yellow-400 text-xl"></i>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card bg-white border-l-4 border-blue-500 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="0">
+          <div class="flex gap-1 mb-3">
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="font-nunito text-gray-600 text-sm leading-relaxed mb-4 italic">"Dr. Arman is truly the best Physical Medicine Specialist in Chittagong. His treatment helped me recover from a severe sports injury very quickly."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-blue-600 text-sm"></i>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-gray-800 text-sm">Satisfied Patient</div>
+              <div class="font-nunito text-gray-400 text-xs">Chittagong</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card bg-white border-l-4 border-blue-500 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex gap-1 mb-3">
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="font-nunito text-gray-600 text-sm leading-relaxed mb-4 italic">"I was suffering from chronic back pain for years. After consulting Dr. Mohammed Arman, I finally found relief with his personalized treatment plan."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-blue-600 text-sm"></i>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-gray-800 text-sm">Patient</div>
+              <div class="font-nunito text-gray-400 text-xs">Noakhali</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card bg-white border-l-4 border-teal-500 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex gap-1 mb-3">
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="font-nunito text-gray-600 text-sm leading-relaxed mb-4 italic">"After my stroke, I thought I'd never walk normally again. Dr. Arman's neurorehabilitation program gave me my life back."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-teal-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-teal-600 text-sm"></i>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-gray-800 text-sm">Recovery Patient</div>
+              <div class="font-nunito text-gray-400 text-xs">Halishahar</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card bg-white border-l-4 border-blue-500 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex gap-1 mb-3">
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="font-nunito text-gray-600 text-sm leading-relaxed mb-4 italic">"Highly professional and knowledgeable doctor. Explained everything clearly and the treatment worked beautifully for my arthritis."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-blue-600 text-sm"></i>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-gray-800 text-sm">Arthritis Patient</div>
+              <div class="font-nunito text-gray-400 text-xs">Agrabad</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card bg-white border-l-4 border-blue-500 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex gap-1 mb-3">
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+            <i class="fas fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <p class="font-nunito text-gray-600 text-sm leading-relaxed mb-4 italic">"My mother had severe joint pain. Dr. Arman's care and attention was exceptional. Strongly recommended to all."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-blue-600 text-sm"></i>
+            </div>
+            <div>
+              <div class="font-poppins font-semibold text-gray-800 text-sm">Patient's Family</div>
+              <div class="font-nunito text-gray-400 text-xs">Chittagong</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Card -->
+        <div class="bg-blue-700 rounded-xl shadow-sm p-6 flex flex-col justify-center items-center text-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-quote-left text-blue-300 text-4xl mb-4"></i>
+          <p class="font-poppins font-semibold text-white text-base mb-4">Thousands of patients trust Dr. Mohammed Arman for their recovery.</p>
+          <a href="#appointment" class="bg-white text-blue-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors font-poppins text-sm">
+            Book Your Visit
+          </a>
+        </div>
+      </div>
+      <p class="text-center font-nunito text-xs text-gray-400 mt-8 italic">Experiences shared by real patients. Results may vary.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: GALLERY ===== -->
+  <section id="gallery" class="py-20 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Gallery</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-4">Gallery</h2>
+        <p class="font-nunito text-gray-500 text-base">Dr. Arman's clinic, consultations, and professional milestones</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Gallery placeholder items with medical SVG illustrations -->
+        <div class="gallery-item rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-user-md text-blue-500 text-4xl mb-2"></i>
+              <p class="font-nunito text-blue-700 text-sm">Dr. Mohammed Arman</p>
+              <p class="font-nunito text-blue-500 text-xs">Physical Medicine Specialist</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-full h-48 bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-hospital text-teal-500 text-4xl mb-2"></i>
+              <p class="font-nunito text-teal-700 text-sm">Parkview Hospital</p>
+              <p class="font-nunito text-teal-500 text-xs">Consultation Room</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-full h-48 bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-certificate text-indigo-500 text-4xl mb-2"></i>
+              <p class="font-nunito text-indigo-700 text-sm">EULAR Certificate</p>
+              <p class="font-nunito text-indigo-500 text-xs">Switzerland</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-full h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-microscope text-green-500 text-4xl mb-2"></i>
+              <p class="font-nunito text-green-700 text-sm">MSK Ultrasound</p>
+              <p class="font-nunito text-green-500 text-xs">Diagnostic Equipment</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-full h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-stethoscope text-orange-500 text-4xl mb-2"></i>
+              <p class="font-nunito text-orange-700 text-sm">Qrex Diagnostic</p>
+              <p class="font-nunito text-orange-500 text-xs">Halishahar, Chittagong</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-award text-purple-500 text-4xl mb-2"></i>
+              <p class="font-nunito text-purple-700 text-sm">FIFA Certification</p>
+              <p class="font-nunito text-purple-500 text-xs">Sports Medicine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="https://web.facebook.com/physiatristarman" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 font-poppins text-sm">
+          <i class="fab fa-facebook"></i> View More on Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 9: CONTACT ===== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Contact</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-4">Get In Touch</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+        <!-- Left: Contact Info -->
+        <div data-aos="fade-right">
+          <div class="space-y-4 mb-8">
+            <a href="tel:+8801841760769" class="flex items-center gap-4 p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors border border-blue-100">
+              <div class="w-12 h-12 bg-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone text-white"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Phone</div>
+                <div class="font-nunito text-gray-600">+880 1841-760769</div>
+              </div>
+            </a>
+
+            <a href="mailto:mohammed.arman.ar@gmail.com" class="flex items-center gap-4 p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors border border-blue-100">
+              <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Email</div>
+                <div class="font-nunito text-gray-600">mohammed.arman.ar@gmail.com</div>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+              <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-white"></i>
+              </div>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Location</div>
+                <div class="font-nunito text-gray-600">Chittagong, Bangladesh</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="flex flex-wrap gap-3">
+            <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-3 rounded-xl transition-colors font-poppins text-sm shadow-sm">
+              <i class="fab fa-whatsapp text-lg"></i> Chat on WhatsApp
+            </a>
+            <a href="https://m.me/physiatristarman" target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-5 py-3 rounded-xl transition-colors font-poppins text-sm shadow-sm">
+              <i class="fab fa-facebook-messenger text-lg"></i> Message on Messenger
+            </a>
+            <a href="https://facebook.com/physiatristarman" target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-3 rounded-xl transition-colors font-poppins text-sm shadow-sm">
+              <i class="fab fa-facebook text-lg"></i> Follow on Facebook
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Google Maps Embed -->
+        <div data-aos="fade-left" data-aos-delay="200">
+          <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
+            <iframe
+              src="https://maps.google.com/maps?q=Parkview+Hospital+Katalganj+Panchlaish+Chittagong&output=embed"
+              width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+              title="Parkview Hospital Chittagong Location"
+              aria-label="Google Map showing Parkview Hospital Chittagong"></iframe>
+          </div>
+
+          <!-- Address cards -->
+          <div class="grid grid-cols-1 gap-3">
+            <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
+              <div class="font-poppins font-semibold text-blue-900 text-sm mb-1"><i class="fas fa-hospital text-blue-600 mr-2"></i>Parkview Hospital</div>
+              <div class="font-nunito text-gray-600 text-sm">94/103, Katalganj Road, Panchlaish, Chattogram</div>
+            </div>
+            <div class="bg-teal-50 rounded-xl p-4 border border-teal-100">
+              <div class="font-poppins font-semibold text-teal-900 text-sm mb-1"><i class="fas fa-clinic-medical text-teal-600 mr-2"></i>Qrex Diagnostic Centre</div>
+              <div class="font-nunito text-gray-600 text-sm">Plot #9/A, Road #1, Lane #2, Block G, Halishahar, Chattogram</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 10: APPOINTMENT ===== -->
+  <section id="appointment" class="py-20 bg-blue-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block text-xs font-poppins font-semibold tracking-widest text-blue-600 uppercase mb-3">Book Now</span>
+        <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-blue-900 mb-4">Book an Appointment</h2>
+        <p class="font-nunito text-gray-500 text-base">Fill in the form below and we'll confirm via WhatsApp</p>
+      </div>
+
+      <!-- Step Indicator -->
+      <div class="flex items-center justify-center gap-3 mb-10" data-aos="fade-up">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-poppins font-bold">1</div>
+          <span class="font-nunito text-xs text-blue-700 font-semibold hidden sm:inline">Location</span>
+        </div>
+        <div class="w-8 h-0.5 bg-blue-200"></div>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-poppins font-bold">2</div>
+          <span class="font-nunito text-xs text-blue-700 font-semibold hidden sm:inline">Date & Time</span>
+        </div>
+        <div class="w-8 h-0.5 bg-blue-200"></div>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-poppins font-bold">3</div>
+          <span class="font-nunito text-xs text-blue-700 font-semibold hidden sm:inline">Payment</span>
+        </div>
+        <div class="w-8 h-0.5 bg-blue-200"></div>
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 bg-blue-700 text-white rounded-full flex items-center justify-center text-xs font-poppins font-bold">4</div>
+          <span class="font-nunito text-xs text-blue-700 font-semibold hidden sm:inline">Patient Info</span>
+        </div>
+      </div>
+
+      <form id="appointment-form" class="bg-white rounded-3xl shadow-xl p-8 border border-blue-100" data-aos="fade-up" data-aos-delay="100" novalidate>
+
+        <!-- Step 1: Location -->
+        <div class="mb-8">
+          <h3 class="font-poppins font-bold text-blue-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold">1</span>
+            Select Consultation Location <span class="text-red-500">*</span>
+          </h3>
+          <div class="space-y-3">
+            <label class="venue-card flex items-start gap-3 p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-blue-500 transition-colors has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50">
+              <input type="radio" name="venue" id="venue1" value="Parkview Hospital, 94/103 Katalganj Road, Panchlaish, Chattogram" class="mt-1 accent-blue-600" required>
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Parkview Hospital</div>
+                <div class="font-nunito text-gray-500 text-xs">94/103 Katalganj Road, Panchlaish | Sat, Mon, Wed | 3–6 PM</div>
+              </div>
+            </label>
+            <label class="venue-card flex items-start gap-3 p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-blue-500 transition-colors has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50">
+              <input type="radio" name="venue" id="venue2" value="Qrex Diagnostic Centre, Plot #9/A, Block G, Halishahar, Chattogram" class="mt-1 accent-blue-600">
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">Qrex Diagnostic Centre</div>
+                <div class="font-nunito text-gray-500 text-xs">Plot #9/A, Block G, Halishahar | Sun, Tue, Thu | 3–6 PM</div>
+              </div>
+            </label>
+            <label class="venue-card flex items-start gap-3 p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-blue-500 transition-colors has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50">
+              <input type="radio" name="venue" id="venue3" value="CIMCH — Chittagong International Medical College & Hospital (By Appointment)" class="mt-1 accent-blue-600">
+              <div>
+                <div class="font-poppins font-semibold text-blue-900 text-sm">CIMCH</div>
+                <div class="font-nunito text-gray-500 text-xs">Chittagong International Medical College Hospital | By Appointment</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 2: Date & Time -->
+        <div class="mb-8">
+          <h3 class="font-poppins font-bold text-blue-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold">2</span>
+            Select Date & Time <span class="text-red-500">*</span>
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="appt-date" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Preferred Date</label>
+              <input type="date" id="appt-date" name="appt-date" required
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors">
+            </div>
+            <div>
+              <label class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Preferred Time</label>
+              <div class="flex flex-wrap gap-2">
+                <label class="time-pill"><input type="radio" name="time" value="3:00 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">3:00 PM</span></label>
+                <label class="time-pill"><input type="radio" name="time" value="3:30 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">3:30 PM</span></label>
+                <label class="time-pill"><input type="radio" name="time" value="4:00 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">4:00 PM</span></label>
+                <label class="time-pill"><input type="radio" name="time" value="4:30 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">4:30 PM</span></label>
+                <label class="time-pill"><input type="radio" name="time" value="5:00 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">5:00 PM</span></label>
+                <label class="time-pill"><input type="radio" name="time" value="5:30 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">5:30 PM</span></label>
+                <label class="time-pill"><input type="radio" name="time" value="6:00 PM" class="sr-only"><span class="block px-3 py-2 border-2 border-gray-200 rounded-lg text-xs font-poppins font-semibold cursor-pointer hover:border-blue-500 transition-colors">6:00 PM</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Payment -->
+        <div class="mb-8">
+          <h3 class="font-poppins font-bold text-blue-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold">3</span>
+            Payment Method
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="flex items-center gap-3 p-4 border-2 border-blue-600 bg-blue-50 rounded-xl cursor-pointer">
+              <input type="radio" name="payment" id="payment-offline" value="Offline" checked class="accent-blue-600">
+              <div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-money-bill text-green-600"></i>
+                  <span class="font-poppins font-semibold text-blue-900 text-sm">Offline Payment</span>
+                </div>
+                <div class="font-nunito text-gray-500 text-xs mt-0.5">Pay at chamber on appointment day</div>
+              </div>
+            </label>
+            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl cursor-pointer opacity-60">
+              <input type="radio" name="payment" id="payment-online" value="Online" class="accent-blue-600">
+              <div>
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-credit-card text-gray-400"></i>
+                  <span class="font-poppins font-semibold text-gray-500 text-sm">Online Payment</span>
+                </div>
+                <div class="font-nunito text-gray-400 text-xs mt-0.5">Currently unavailable</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 4: Patient Info -->
+        <div class="mb-8">
+          <h3 class="font-poppins font-bold text-blue-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold">4</span>
+            Patient Information
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="patient-name" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" id="patient-name" placeholder="Your full name" required
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors" aria-label="Patient full name">
+            </div>
+            <div>
+              <label for="patient-dob" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Date of Birth <span class="text-red-500">*</span></label>
+              <input type="date" id="patient-dob" required
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors" aria-label="Patient date of birth">
+            </div>
+            <div>
+              <label for="patient-mobile" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Mobile Number <span class="text-red-500">*</span></label>
+              <input type="tel" id="patient-mobile" placeholder="+880XXXXXXXXXX" required
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors" aria-label="Patient mobile number">
+            </div>
+            <div>
+              <label for="patient-whatsapp" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">WhatsApp (if different)</label>
+              <input type="tel" id="patient-whatsapp" placeholder="+880XXXXXXXXXX"
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors" aria-label="Patient WhatsApp number">
+            </div>
+            <div>
+              <label for="patient-location" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Location / District <span class="text-red-500">*</span></label>
+              <input type="text" id="patient-location" placeholder="e.g., Chittagong, Noakhali" required
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors" aria-label="Patient location">
+            </div>
+            <div>
+              <label for="appt-reason" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Reason for Visit <span class="text-red-500">*</span></label>
+              <input type="text" id="appt-reason" placeholder="Chief complaint / reason" required
+                     class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors" aria-label="Reason for visit">
+            </div>
+            <div class="sm:col-span-2">
+              <label for="appt-notes" class="block font-nunito text-sm text-gray-600 font-semibold mb-2">Additional Notes (optional)</label>
+              <textarea id="appt-notes" rows="3" placeholder="Any additional information or medical history..."
+                        class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 font-nunito text-gray-800 focus:outline-none focus:border-blue-500 transition-colors resize-none" aria-label="Additional notes"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+                class="w-full flex items-center justify-center gap-3 bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-blue-200 font-poppins">
+          <i class="fab fa-whatsapp text-2xl text-green-300"></i>
+          Confirm Appointment & Contact Doctor
+        </button>
+        <p class="text-center font-nunito text-xs text-gray-400 mt-3">
+          <i class="fas fa-lock text-gray-400 mr-1"></i>
+          Your information is secure and will only be used to confirm your appointment.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Column 1: Doctor Info -->
+        <div data-aos="fade-up" data-aos-delay="0">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center shadow-lg">
+              <i class="fas fa-user-md text-white text-lg"></i>
+            </div>
+            <div>
+              <div class="font-playfair text-lg font-bold text-white">Dr. Mohammed Arman</div>
+              <div class="font-nunito text-blue-300 text-xs">Physical Medicine Specialist</div>
+            </div>
+          </div>
+          <p class="font-nunito text-blue-200 text-sm leading-relaxed mb-4">
+            Physical Medicine & Rehabilitation Specialist. MBBS (CMC) | FCPS (PM&R) | EULAR Certified.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://facebook.com/physiatristarman" target="_blank" rel="noopener"
+               class="w-9 h-9 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors" aria-label="Facebook">
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+               class="w-9 h-9 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp text-sm"></i>
+            </a>
+            <a href="mailto:mohammed.arman.ar@gmail.com"
+               class="w-9 h-9 bg-red-600 hover:bg-red-500 rounded-full flex items-center justify-center transition-colors" aria-label="Email">
+              <i class="fas fa-envelope text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h4 class="font-poppins font-bold text-white text-base mb-5">Quick Links</h4>
+          <ul class="space-y-2.5 font-nunito text-sm">
+            <li><a href="#about" class="text-blue-200 hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-blue-400"></i>About</a></li>
+            <li><a href="#specialties" class="text-blue-200 hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-blue-400"></i>Specialties</a></li>
+            <li><a href="#services" class="text-blue-200 hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-blue-400"></i>Services</a></li>
+            <li><a href="#chambers" class="text-blue-200 hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-blue-400"></i>Chambers</a></li>
+            <li><a href="#appointment" class="text-blue-200 hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-blue-400"></i>Appointment</a></li>
+            <li><a href="#contact" class="text-blue-200 hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-blue-400"></i>Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Consultation Hours -->
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h4 class="font-poppins font-bold text-white text-base mb-5">Consultation Hours</h4>
+          <div class="space-y-3 font-nunito text-sm">
+            <div class="flex items-start gap-2">
+              <i class="fas fa-hospital text-blue-300 mt-0.5 text-sm flex-shrink-0"></i>
+              <div>
+                <div class="text-white font-semibold text-xs">Parkview Hospital</div>
+                <div class="text-blue-200">Sat, Mon & Wed</div>
+                <div class="text-blue-300">3:00 – 6:00 PM</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <i class="fas fa-clinic-medical text-teal-300 mt-0.5 text-sm flex-shrink-0"></i>
+              <div>
+                <div class="text-white font-semibold text-xs">Qrex Diagnostic</div>
+                <div class="text-blue-200">Sun, Tue & Thu</div>
+                <div class="text-blue-300">3:00 – 6:00 PM</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <i class="fas fa-phone text-blue-300 text-sm flex-shrink-0"></i>
+              <a href="tel:+8801841760769" class="text-blue-200 hover:text-white transition-colors">+880 1841-760769</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div data-aos="fade-up" data-aos-delay="300">
+          <h4 class="font-poppins font-bold text-white text-base mb-5">Contact</h4>
+          <div class="space-y-3 font-nunito text-sm mb-5">
+            <a href="tel:+8801841760769" class="flex items-center gap-2 text-blue-200 hover:text-white transition-colors">
+              <i class="fas fa-phone text-blue-300 text-sm"></i> +880 1841-760769
+            </a>
+            <a href="mailto:mohammed.arman.ar@gmail.com" class="flex items-center gap-2 text-blue-200 hover:text-white transition-colors">
+              <i class="fas fa-envelope text-blue-300 text-sm"></i> mohammed.arman.ar@gmail.com
+            </a>
+            <div class="flex items-center gap-2 text-blue-200">
+              <i class="fas fa-map-marker-alt text-blue-300 text-sm"></i> Chittagong, Bangladesh
+            </div>
+          </div>
+          <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+             class="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold py-2.5 rounded-xl transition-colors text-sm font-poppins">
+            <i class="fab fa-whatsapp text-lg"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="border-t border-blue-800 py-5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="font-nunito text-blue-300 text-sm text-center sm:text-left">
+          © 2026 Dr. Mohammed Arman. All Rights Reserved.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="privacy.html" class="font-nunito text-blue-400 hover:text-blue-200 text-xs transition-colors">Privacy Policy</a>
+          <span class="text-blue-700">|</span>
+          <a href="disclaimer.html" class="font-nunito text-blue-400 hover:text-blue-200 text-xs transition-colors">Disclaimer</a>
+          <span class="text-blue-700">|</span>
+          <span class="font-nunito text-blue-400 text-xs">Designed by <a href="https://arman.bd" target="_blank" rel="noopener" class="text-blue-300 hover:text-white transition-colors">Service Arman</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/8801841760769" target="_blank" rel="noopener"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
+     aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="hidden fixed bottom-24 right-6 z-50 w-11 h-11 bg-blue-700 hover:bg-blue-800 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
