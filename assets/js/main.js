@@ -159,10 +159,7 @@ $(document).ready(function () {
 
     // Gather values
     const name     = $.trim($('#patient-name').val());
-    const dob      = $.trim($('#patient-dob').val());
     const mobile   = $.trim($('#patient-mobile').val());
-    const whatsapp = $.trim($('#patient-whatsapp').val());
-    const location = $.trim($('#patient-location').val());
     const venue    = $('input[name="venue"]:checked').val() || '';
     const date     = $.trim($('#appt-date').val());
     const time     = $('input[name="time"]:checked').val() || '';
@@ -170,7 +167,7 @@ $(document).ready(function () {
     const notes    = $.trim($('#appt-notes').val());
 
     // Validation
-    if (!name || !dob || !mobile || !location || !venue || !date || !time || !reason) {
+    if (!name || !mobile || !date || !time || !reason) {
       Swal.fire({
         icon: 'warning',
         title: 'Please fill all required fields',
